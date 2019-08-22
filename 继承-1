@@ -23,3 +23,8 @@ class Prentice(Master, School):
 daqiu = Prentice()
 daqiu.make_cake()
 daqiu.make_master_cake()
+
+子类调用父类同名属性，在子类中，重新定义一个方法即【19】，此时，需要对父类方法和属性进行重新封装，即父类名.函数名（父类方法）（）
+同时需要对父类进行初始化，再次调用初始化即__init__的原因时，想要调用父类的属性和方法，而属性和方法存储在——init——中
+
+
