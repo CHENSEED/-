@@ -1,0 +1,25 @@
+class Master():
+    def __init__(self):
+        self.kong_fu = '[古法煎饼果子配方]'
+    def make_cake(self):
+        print(f'运用{self.kong_fu}制作煎饼果子')
+class School():
+    def __init__(self):
+        self.kong_fu = '[黑马煎饼果子配方]'
+    def make_cake(self):
+        print(f'运用{self.kong_fu}制作煎饼果子')
+
+class Prentice(Master, School):
+    def __init__(self):
+        self.kong_fu = '[全新黑马古法煎饼果子】'
+
+    def make_cake(self):
+        print(f'运用{self.kong_fu}制作煎饼果子')
+    # 子类调用父类同名方法时要对父类方法属性重新封装
+    def make_master_cake(self):
+        # 即父类名.函数名（）
+        Master.__init__(self)
+        Master.make_cake(self)
+daqiu = Prentice()
+daqiu.make_cake()
+daqiu.make_master_cake()
