@@ -1,0 +1,23 @@
+私有属性：父类对于子类继承的属性，并不想要全部传递给子类，而这时不想传递属性便是私有属性，这个时候我们就要为这些属性和方法添加私有权
+设置私有权限方法：在属性和方法前面添加两个下划线（_）
+能够继承的叫公有权限，不能继承的叫私有权限
+class Prentice(Master,School):
+    def __init__(self):
+        self.kong_fu = '[全新黑马古法煎饼果子】'
+        #self.money = 20000
+        自我.__ money = 20000        
+方法的私有定义和属性一样 def __make_cake()
+私有属性和私有方法只能在类内部访问和修改，在python中 一般使用get__xx访问属性和方法，使用set__xx修改属性和方法
+class Prentice(Master,School):
+    def __init__(self):
+        self.kong_fu = '[全新黑马古法煎饼果子】'
+        #self.money = 20000
+        self.__ money = 20000
+#获取私有属性值
+def get__money(self):
+  return self.__money
+#修改私有属性值
+def set__money(self):
+  self.__money = 500
+        
+        
