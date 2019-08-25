@@ -1,6 +1,6 @@
 面向对象三大特性
 （1）封装：将属性和方法写到类的里面的操作
-         ：封装可以为属性添加私有权限
+         ：封装可以为属性添加私有权限 self.—__money()
 （2）继承：
           ž子类继承父类所有属性和方法
           ž子类也可以重写父类方法和属性
@@ -9,4 +9,27 @@
 因而成为这些子类的父类的方法），不同的子类传入对象不一样，所以执行结果不同！
 实现步骤：（1）定义父类，定义公有fangfa
           （2）定义子类，重写父类方法
-          （3）传入不同对象，显示不同执行结果
+          （3）传递子类对象给调用者，显示不同执行结果
+# 需求：警务人员和警犬一起工作，警犬分两种，追击敌人和识别毒品，使用不同的警犬，完成不同的工作
+# 多态步骤 1：创建父类，定义公共方法
+class Dog():
+    def work(self):
+        pass
+# 2：创建子类，重写父类方法
+class RunningDog(Dog):
+    def work(self):
+        print('追击敌人')
+class DrugDog(Dog):
+    def work(self):
+        print('识别毒品')
+class People():
+    def work_with_dog(self,dog):
+        dog.work
+#3：给子类对象传递不同参数，执行不同结果
+
+RD = RunningDog
+DD =DrugDog
+
+
+daqiu = People()
+daqiu.work_with_dog(RD)
