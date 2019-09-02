@@ -1,3 +1,55 @@
 readlines（）：从文件中读取每一行，并将存储在一个列表中
 # 写入文件
 通常是给open（）传递第二个实参，告诉其我们将要执行的操作，一般有‘w’，‘r’
+异常作用：在不确定代码会不会发生错误的状况下，尝试使用异常的写法，进行对代码的操作，异常写法
+try:
+    执行的代码
+except:
+    执行这行代码发生错误的，我们其余要执行的代码
+异常类型：NameErroe....
+捕获指定异常
+try:
+  执行的代码
+except 异常类型：
+    如果捕获到异常类型此时执行的代码
+如果尝试执行代码异常类型和捕获异常类型不一致，则无法捕获异常
+一般try下只放尝试执行的代码
+捕获多个指定异常：当我们无法确定异常类型时，可以把要捕获的异常类型放到except后面，利用元组的方式进行书写
+try：
+    执行的代码
+except：（NameError，ZeroDivisionError）
+    如果捕获到该异常，执行的代码
+捕获异常描述信息：（对于出错的代码的原因进行的解释）
+try:
+    print(num)
+except NameError as result:（result：存储异常描述信息）
+    print(result)
+执行结果：name 'num' is not defined
+捕获所有异常：Exception是所有程序异常类的父类
+try:
+    print(1/0)
+except Exception as result:
+    print(result)
+执行结果：division by zero
+异常的else：
+try：
+
+except：
+
+else：
+    如果没有异常执行的代码
+ finally：无论是否异常都要执行的代码 如关闭文件
+ 
+ try：
+ 
+ except：
+  
+ else：
+ 
+ finally：
+      f.close（）
+    
+    
+    
+    
+    
