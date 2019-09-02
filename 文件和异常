@@ -40,11 +40,11 @@ else：
     如果没有异常执行的代码
  finally：无论是否异常都要执行的代码 如关闭文件
  
- try：
+try：（尝试执行时发生异常）
  
- except：
-  
- else：
+except：（捕获异常）
+
+else：（当没有发生异常时执行的代码）
  
  finally：
       f.close（）
