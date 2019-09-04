@@ -1,0 +1,22 @@
+存储数据：也多程序要求用户输入一些信息，而此时程序将这些信息存储在列表或者字典等数据结构中，当用户关闭程序时，此时，我们便需要将用户输入的信息
+进行保存，一般我们都是使用模块json（JavaScript object notat）存储数据。
+
+# 需求，我们要将一个列表利用json模块存储到程序中，同时在调用它
+# 调用json模块利用json.dump（）存储数据
+同时json.dump（）需要两个参数，一个为需要存储的数据以及存储的对象
+import json
+
+# 需要存储的数据
+numbers = {'lili':'keyss','sara':'qqq'}
+# 将数据存储到程序中 指定其为json格式
+filename = 'numbers.json'
+with open(filename,'w') as f_obj:
+    json.dump(numbers,f_obj)
+    
+利用json.load读取数据
+
+import json
+filename = 'numbers.json'
+with open(filename) as f_obj:
+    numbers = json.load((f_obj))
+print(numbers)
