@@ -18,7 +18,7 @@ def get__money(self):
   return self.__money
 #修改私有属性值
 def set__money(self):
-  自我.__钱= 500
+  self.__money= 500
 通常，对于类的属性的获取和修改都是在类内部完成的
 
         
