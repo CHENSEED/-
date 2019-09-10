@@ -26,6 +26,19 @@ Process finished with exit code 0
 
 Empty suite
 找到两种解决办法 但是一直没有解决
+！！！ 解决办法 对于测试函数以test开头 结果
+Testing started at 10:21 ...
+F:\deep\venv\Scripts\python.exe "F:\pycharm\PyCharm 2019.2\helpers\pycharm\_jb_unittest_runner.py" --path F:/deep/1est_name_function.py
+Launching unittests with arguments python -m unittest F:/deep/1est_name_function.py in F:\deep
+
+
+
+Ran 1 test in 0.002s
+
+OK
+
+Process finished with exit code 0
+
 
 测试类
 
