@@ -1,0 +1,30 @@
+测试函数
+# 导入unitest
+import unitest
+导入想要测试的函数
+from name_function import get_formatted_name
+#继承unitest类
+class NameTestCase（unitest.Testcase):
+  #定义方法
+  def test——first——last——name（self）：
+    formatted——name = get_formatted_name（‘形参一’，‘形参2’）
+    运用断言函数判断程序能否正常处理
+    self.arrestEqual（formatted_name,'形参一，形参2）
+unitest.main()
+出现问题：
+Testing started at 8:57 ...
+F:\deep\venv\Scripts\python.exe "F:\pycharm\PyCharm 2019.2\helpers\pycharm\_jb_unittest_runner.py" --path F:/deep/1est_name_function.py
+Launching unittests with arguments python -m unittest F:/deep/1est_name_function.py in F:\deep
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+Process finished with exit code 0
+
+Empty suite
+找到两种解决办法 但是一直没有解决
+
+测试类
