@@ -1,10 +1,10 @@
 测试函数
-# 导入unitest
-import unitest
+# 导入unittest
+import unittest
 导入想要测试的函数
 from name_function import get_formatted_name
 #继承unitest类
-class NameTestCase（unitest.Testcase):
+class NameTestCase（unittest.Testcase):
   #定义方法
   def test——first——last——name（self）：
     formatted——name = get_formatted_name（‘形参一’，‘形参2’）
