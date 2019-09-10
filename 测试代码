@@ -28,3 +28,12 @@ Empty suite
 找到两种解决办法 但是一直没有解决
 
 测试类
+
+
+各种断言方法
+arrestEqual(a,b) 核实a=b
+arrestnotEqual（a，b）a！=b
+arrestTrue（X） 核实为真
+arrestFalse（X）核实为假
+arrestinIn（item list）核实item在list中
+arrestnotIn（item list）核实item不在list中
